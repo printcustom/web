@@ -1,0 +1,155 @@
+@font-face { font-family: roboto-regular;
+    src: url('../font/Roboto-Regular.ttf');
+}
+
+@font-face { font-family: robotoMono-regular;
+    src: url('../font/RobotoMono-Regular.ttf');
+}
+
+@font-face { font-family: merryWeather-regular;
+    src: url('../font/Merriweather-Regular.ttf');
+}
+
+.icono {
+    width: 2em;;
+}
+
+.barra-menu {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2em;
+}
+
+.barra-menu__icono {
+    cursor: pointer;
+    width: 250px;
+}
+
+.barra-menu__items {
+    font-family: 'robotoMono-regular', sans-serif;
+    font-size: 0.7em;
+    color: white;
+    text-decoration: none;
+}
+
+.barra-menu__items:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.4);
+    background-color: lightgray;
+    color: black;
+    padding: 10px;
+    border-radius: 7px;
+    font-family: 'Roboto-Regular', sans-serif;
+    cursor: pointer;
+}
+
+/* Botón de menú */
+.toggle-menu {
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    right: 5px;
+    top: 10px;
+    z-index: 50;
+}
+
+.contenedor-boton {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.toggle-menu__linea {
+    position: relative;
+    width: 30px;
+    height: 5px;
+    background-color:grey;
+    border-radius: 2.5px;
+}
+
+.toggle-menu__linea::after,
+.toggle-menu__linea::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color:grey;
+    border-radius: 2.5px;
+    top: 0.5em;
+}
+
+.toggle-menu__linea:before {
+    top: -0.5em;
+}
+
+/* Desplegable del botón de menú */
+.menu-boton {
+    position: fixed;
+    display: none;
+    top: 60px;
+    right:5px;
+    width: 200px;
+    z-index: 60;
+    background-color: #5686a1;
+    border-radius: 10px;
+}
+
+.menu-boton-show {
+    display: block;
+}
+
+.menu {
+    list-style: none;
+    padding: 1em;
+    margin: 0;
+}
+
+.menu__item {
+    padding-top: 0.5em;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 1em;
+    color: white;
+}
+
+.menu__link {    
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu__link:hover{
+    transition: all .2s ease-in-out;
+    font-size: 1.1em;
+    color: black;
+}
+
+
+@media screen and (min-width: 1100px) {
+    .toggle-menu,
+    .menu-boton {
+        display: none;
+    }
+
+    .barra-menu__items {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .toggle-menu {
+        display: block;
+    }
+
+    .barra-menu__items {
+        display: none;
+    }
+}
