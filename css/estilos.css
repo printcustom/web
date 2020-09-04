@@ -56,11 +56,9 @@ body {
 }
 
 
-.tarjeta-visita,
-.cartel,
-.flyer,
-.digital,
-.pegatina {
+.fondo-info,
+.fondo-blanco,
+.fondo-pie {
     top: 100%;
     position: relative;
     background-repeat: no-repeat;
@@ -70,23 +68,16 @@ body {
     /* height: 100%; */
 }
 
-.tarjeta-visita {
-    background-image: url("../img/TarjetaVisita.jpg");
+.fondo-info {
+    background-image: url("../img/fondos/shutterstock_1044300787.jpg");
 }
 
-.cartel {
-    background-image: url("../img/cartel.jpg");
+.fondo-blanco {
+    background-color: white;
+    padding-bottom: 30px;
 }
 
-.flyer {
-    background-image: url("../img/flyers.jpg");
-}
-
-.digital {
-    background-image: url("../img/digital.jpg");
-    height: 100%;
-}
-
-.pegatina {
-    background-image: url("../img/pegatinas.jpg");
+.fondo-pie {
+    background-image: url("../img/fondos/fondo_pie.jpg");
+    color: white;
 }

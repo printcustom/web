@@ -1,40 +1,21 @@
 @font-face { font-family: fuente-tip;
-    src: url('../font/Roboto-Regular.ttf');
+    src: url('../font/Montserrat-Regular.ttf');
 }
 
 .contenedor-horizontal,
 .contenedor-vertical {
     width: 90%;
     margin: 0 auto;
+    padding-bottom: 2em;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    
 }
 
 .contenedor-vertical {
     flex-direction: column;
 }
-
-.caja-oscura,
-.caja-clara,
-.caja-ancha {
-    width: 50%;
-    margin: 10px;
-    padding: 15px;
-    border-radius: 12px;
-    overflow: auto;
-    z-index: 40;
-}
-
-@media screen and (max-width: 500px) {
-    .caja-oscura,
-    .caja-clara,
-    .caja-ancha {
-        width: 95vw;
-    }
-}
-
 
 /*
 Fondo: #222831
@@ -43,25 +24,6 @@ naranja: #ff5722
 blanco: #f2f2f2
 texto: #53819b
 */
-
-.caja-oscura {
-    background-color: #222831;
-    /* color: #53819b; */
-    color: #f2f2f2;
-}
-
-.caja-clara {
-    background-color: #53819b;
-    color: #f2f2f2;
-}
-
-.caja-ancha {
-    width: 90%;
-    /* background-color: lightgray; */
-    background-color: #dedede;
-    color: black;
-    border: 1px solid grey;
-}
 
 .texto-titulo {
     font-family: 'fuente-tip', sans-serif;
@@ -73,26 +35,74 @@ texto: #53819b
 
 .texto {
     font-family: 'fuente-tip', sans-serif;
-    font-size: 1em;
+    font-size: 1.5em;
     color: inherit;
 }
 
-.texto li {
+/* .texto li {
     padding-bottom: 1em;
+} */
+
+
+
+.txt_titulo2,
+.txt_titulo-pie {
+    width: 80%;
+    margin: auto;    
+    font-family: 'fuente-tip', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    letter-spacing: 10px;
+    color: #ff5722;
+}
+
+.txt_titulo-pie {
+    color: white;
+    font-size: 2em;
+}
+
+@media screen and (max-width: 480px) {
+    .txt_titulo2 {
+        font-size: 1em;
+    }
+}
+
+.icono-instagram {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.texto-instagram {
+    font-family: 'fuente-tip', sans-serif;
+    font-size: 1.5em;
+}
+
+.imagen {
+    min-width: 240px;
 }
 
 .centrado {
     display: block;
-    margin: auto;
-    padding-bottom: 1em;
+    margin: 2em auto;
+    padding: 1em;
+}
+
+.mitad{
+    display: block;
+    width: 50%;
+    min-width: 240px;
+    flex: 1;
 }
 
 .tercio {
+    display: block;
     width: 30%;
+    flex: 1;
 }
 
-@media screen and (max-width: 500px) {
-    .tercio {
+@media screen and (max-width: 480px) {
+    .tercio, 
+    .mitad {
         width: 100%;
     }
 }
