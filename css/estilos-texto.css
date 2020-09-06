@@ -27,7 +27,7 @@ texto: #53819b
 
 .texto-titulo {
     font-family: 'fuente-tip', sans-serif;
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: bold;
     color: #ff5722;
     margin-bottom: 15px;
@@ -44,16 +44,19 @@ texto: #53819b
 } */
 
 
-
+.txt_titulo1,
 .txt_titulo2,
 .txt_titulo-pie {
     width: 80%;
     margin: auto;    
     font-family: 'fuente-tip', sans-serif;
-    font-size: 1.5em;
+    font-size: 2em;
     text-align: center;
-    letter-spacing: 10px;
     color: #ff5722;
+}
+
+.txt_titulo1 {
+    font-size: 2.5em;
 }
 
 .txt_titulo-pie {
