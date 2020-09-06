@@ -82,6 +82,11 @@ texto: #53819b
 
 .imagen {
     min-width: 240px;
+    transition: transform .5s ease-in-out;
+}
+
+.imagen:hover {
+    transform: scale(1.02);
 }
 
 .centrado {
