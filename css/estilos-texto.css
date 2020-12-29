@@ -1,88 +1,50 @@
-@font-face { font-family: fuente-tip;
-    src: url('../font/Montserrat-Regular.ttf');
-}
 
-.contenedor-horizontal,
-.contenedor-vertical {
-    width: 90%;
-    margin: 0 auto;
-    padding-bottom: 2em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;    
-}
-
-.contenedor-vertical {
-    flex-direction: column;
-}
-
-/*
-Fondo: #222831
-mas claro: #5686a1
-naranja: #ff5722
-blanco: #f2f2f2
-texto: #53819b
-*/
-
-.texto-titulo {
-    font-family: 'fuente-tip', sans-serif;
-    font-size: 2em;
-    font-weight: bold;
-    color: #ff5722;
+.texto {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 1.5em;
+    color: inherit;
     margin-bottom: 15px;
 }
 
-.texto {
-    font-family: 'fuente-tip', sans-serif;
-    font-size: 1.5em;
-    color: inherit;
-}
-
-/* .texto li {
-    padding-bottom: 1em;
-} */
-
-
-.txt_titulo1,
-.txt_titulo2,
-.txt_titulo-pie {
+.titulo-pie {
     width: 80%;
     margin: auto;    
-    font-family: 'fuente-tip', sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
     font-size: 2em;
     text-align: center;
-    color: #ff5722;
+    color: black;
 }
 
-.txt_titulo1 {
-    font-size: 2.5em;
+.titulo-pie h3 {
+    font-weight: normal;
+    margin-bottom: 0;
+}
+.titulo-pie p {
+    font-size: 0.7em;
+    margin: 0;
 }
 
-.txt_titulo-pie {
-    color: white;
-    font-size: 2em;
-}
 
-@media screen and (max-width: 480px) {
-    .txt_titulo2 {
-        font-size: 1em;
-    }
-}
-
-.icono-instagram {
-    width: 100px;
-    margin-right: 20px;
-}
-
-.texto-instagram {
-    font-family: 'fuente-tip', sans-serif;
+.txt_titulo {
+    width: 80%;
+    margin: auto;
+    font-family: Verdana, Tahoma, sans-serif;
     font-size: 1.5em;
+    text-align: center;
+    /* color: #ff5722; */
+    color: black;
 }
+
+.txt_titulo h2 {
+    font-weight: normal;
+    margin-top: 0;
+    padding-top: 2em;
+}
+
 
 .imagen {
-    min-width: 240px;
-    transition: transform .5s ease-in-out;
+    max-width: 100%;
+    transition: transform .3s ease-in-out;
 }
 
 .imagen:hover {
@@ -92,25 +54,5 @@ texto: #53819b
 .centrado {
     display: block;
     margin: 2em auto;
-    padding: 1em;
-}
-
-.mitad{
-    display: block;
-    width: 50%;
-    min-width: 240px;
-    flex: 1;
-}
-
-.tercio {
-    display: block;
-    width: 30%;
-    flex: 1;
-}
-
-@media screen and (max-width: 480px) {
-    .tercio, 
-    .mitad {
-        width: 100%;
-    }
+    padding: 15px;
 }

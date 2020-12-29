@@ -6,13 +6,10 @@
     src: url('../font/RobotoMono-Regular.ttf');
 }
 
-@font-face { font-family: merryWeather-regular;
-    src: url('../font/Merriweather-Regular.ttf');
-}
 
-.icono {
+/* .icono {
     width: 2em;;
-}
+} */
 
 .barra-menu {
     position: fixed;
@@ -23,6 +20,7 @@
     align-items: center;
     justify-content: space-between;
     padding-right: 2em;
+    /* background-color: white; */
 }
 
 .barra-menu__icono {
