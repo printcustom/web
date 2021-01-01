@@ -87,12 +87,29 @@
         <img src="img/iconos/logos-blanco.png" alt="" class="centrado">
     </div>
 
-    <div class="social">
+    <div id="social">
         <div class="contenedor-vertical">
-            <img src="img/iconos/instagram.png" alt="instagram">
-            <img src="img/iconos/youtube.png" alt="youtube">
-            <img src="img/iconos/facebook.png" alt="facebook">
+            <a href="#" disabled>
+                <img src="img/iconos/instagram.png" alt="instagram" class="social-img">
+            </a>
+            <a href="#">
+                <img src="img/iconos/youtube.png" alt="youtube" class="social-img">
+            </a>
+            <a href="#">
+                <img src="img/iconos/facebook.png" alt="facebook" class="social-img">
+            </a>
         </div>
+    </div>
+
+    <div id="cookies">
+        <p>
+            Este sitio web usa cookies propias y de terceros. Si permanece aquí, acepta su uso.
+            Puede leer más <a href="html/avisolegal.html#cookies">aquí</a>.
+        </p>
+        <span>
+            <input type="button" value="Aceptar" onclick="aceptaCookies()" class="btn_cookie">
+            <input type="button" value="Rechazar" class="btn_cookie">
+        </span>
     </div>
 
     <div class="fondo-soluciones">
@@ -233,19 +250,25 @@
     </div>
 
     
-    <div class="fondo-pie">
+    <div class="pie-contacto">
         <div class="contenedor-vertical">
             <div class="titulo-pie">
                 <h3>Newsletter</h3>
                 <p>Suscríbete y ahorra.</p>
             </div>
-            <form action="mailto:prueba@printcustom.com">
-                <input type="email" placeholder="miemail@correo.com" class="email">
-                <input type="submit" value="Enviar" class="caja-email-envia">
+            <form method="post" action="mailto:comercial@printcustom.com" enctype="text/plain">
+                <input type="email" placeholder="miemail@ejemplo.com" class="email" name="email">
+                <input type="submit" value="Enviar" id="btn_enviar" class="caja-email-envia" disabled>
+                <div class="acepto">
+                    <input type="checkbox" name="acepto" id="chk_acepto" onclick="activaEnviar()">
+                    <span>
+                        Acepto la <a href="html/privacidad.html">política de privacidad</a>
+                    </span>
+                </div>
             </form>
 
             <div class="contacto">
-                <h3>Contacto PrintCustom</h3>
+                <h3>Contacto</h3>
                 <address>
                     <div class="contacto-item">
                         <img src="img/iconos/telefono.png" alt="">
@@ -257,24 +280,26 @@
                     </div>
                     <div class="contacto-item alinea-arriba">
                         <img src="img/iconos/ubicacion.png" alt="">
-                        <iframe class="g-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3127.564732904229!2d-0.7674416842467346!3d38.38218957965322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63c616d67266ab%3A0xbf948a18dae549c3!2sAv.%20de%20la%20Constituci%C3%B3n%2C%2029%2C%2003660%20Novelda%2C%20Alicante!5e0!3m2!1ses!2ses!4v1609278935964!5m2!1ses!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        <iframe class="g-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3127.564732904229!2d-0.7674416842467346!3d38.38218957965322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63c616d67266ab%3A0xbf948a18dae549c3!2sAv.%20de%20la%20Constituci%C3%B3n%2C%2029%2C%2003660%20Novelda%2C%20Alicante!5e0!3m2!1ses!2ses!4v1609278935964!5m2!1ses!2ses" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
                 </address>
             </div>
         </div>
+        
+        <div id="legalidad">
+            <p><a href="html/avisolegal.html">Aviso legal</a></p>
+            <p><a href="html/privacidad.html">Política de privacidad</a></p>
+        </div>
     </div>
 
-    <div class="fondo-pie-2">
+    <div class="fondo-pie">
         <span class="flex-vertical">
-            <img src="img/logo.png" alt="" class="logo-peq">
-            <span>Copyright &copy; 2021 PrintCustom</span>
+            <img src="img/logo.png" alt="logo printcustom icono" class="logo-peq">
+            <span  id="txt-pie">Copyright &copy; 2021 PrintCustom</span>
         </span>
-        <img src="img/logo-texto.png" alt="" class="logo-texto">
-        <img src="img/iconos/pago.png" alt="" class="logo-texto">
-
+        <img src="img/logo-texto.png" alt="logo printcustom" class="logo-texto">
+        <img src="img/iconos/pago.png" alt="formas de pago" class="logo-texto" id="img-pago">
     </div>
-
-
 
     <script src="js/codigo.js"></script>
 </body>

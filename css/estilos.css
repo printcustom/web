@@ -1,4 +1,12 @@
 
+/*
+Fondo: #222831
+mas claro: #5686a1
+naranja: #ff5722
+blanco: #f2f2f2
+texto: #53819b
+*/
+
 /* @font-face { font-family: roboto-regular;
     src: url('../font/Roboto-Regular.ttf');
 }
@@ -55,7 +63,9 @@ body {
     }
 }
 
-.social {
+/*-----------------------------------------*/
+
+#social {
     width: 40px;
     position: fixed;
     right: 2px;
@@ -63,10 +73,50 @@ body {
     z-index: 10;
 }
 
-.social img {
+.social-img {
     margin-bottom: 5px;
+    opacity: 0.5;
+    transition: transform .3s ease-in-out;
+}
+.social-img:hover {
+    opacity: 1;
+    transform: scale(1.12);
 }
 
+/*-----------------------------------------*/
+
+#cookies {
+    position: fixed;
+    bottom: 0;
+    z-index: 15;
+    width: 100%;
+    background-color: #212832;
+    /* color: #f55c19; */
+    color:  #547b9c;
+    padding: 1em;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    display: none;
+}
+
+#cookies p {
+    margin: 0;
+}
+
+#cookies a {
+    color: inherit;
+}
+
+.btn_cookie {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 0.8em;
+    background-color: #eee;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+/*-----------------------------------------*/
 
 .contenedor-horizontal,
 .contenedor-vertical {
@@ -83,25 +133,19 @@ body {
     flex-direction: column;
 }
 
-/*
-Fondo: #222831
-mas claro: #5686a1
-naranja: #ff5722
-blanco: #f2f2f2
-texto: #53819b
-*/
+/*-----------------------------------------*/
 
-
-.fondo-pie {
+.pie-contacto {
     position: relative;
     max-width: 100%;
-    height: 100%;
     top: 100%;
+    /* min-height: 720px; */
+    /* height: 100%; */
+    height: 720px;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+    background-position: left;
     background-size: cover;
-    background-image: url("../img/pie/fondo-pie.jpg");
+    background-image: url("../img/pie/fondo-pie.jpg");    
 }
 
 
@@ -133,6 +177,21 @@ texto: #53819b
     cursor: pointer;
 }
 
+.acepto {
+    position: relative;
+    top: -30px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 1em;
+}
+
+.acepto span {
+    margin-left: 0.5em;
+}
+
 .contacto {
     position: absolute;
     top: 200px;
@@ -143,7 +202,7 @@ texto: #53819b
 
 .contacto h3 {
     font-family: Verdana, Tahoma, sans-serif;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: normal;
 }
 
@@ -152,7 +211,7 @@ texto: #53819b
     justify-content: left;
     align-items: center;
     font-family: Verdana, Tahoma, sans-serif;
-    font-size: 2em;
+    font-size: 1.5em;
     margin-bottom: 20px;
 }
 
@@ -161,7 +220,7 @@ texto: #53819b
 }
 
 .contacto-item img {
-    width: 50px;
+    width: 40px;
     margin-right: 20px;
     
 }
@@ -171,20 +230,9 @@ texto: #53819b
     color: inherit;
 }
 
-@media screen and (max-width: 768px) {
-    .contacto-item {
-        font-size: 1.5em;
-    }
-    .g-maps {
-        width: 400px;
-        height: 300px;
-    }
-    .contacto h3 {
-        font-size: 2em;
-    }
-}
+/*-----------------------------------------*/
 
-.fondo-pie-2 {
+.fondo-pie {
     position: relative;
     height: 50px;
     top: 100%;
@@ -193,9 +241,20 @@ texto: #53819b
     font-family: Verdana, Tahoma, sans-serif;
     font-size: 1em;
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
 }
+
+
+@media screen and (max-width: 768px) {
+    #img-pago, #txt-pie {
+        display: none;
+    }
+    .fondo-pie {
+        justify-content:center;
+    }
+}
+
 
 .logo-peq {
     width: 25px;
@@ -209,5 +268,22 @@ texto: #53819b
 .flex-vertical {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
+}
+
+#legalidad {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    height: 20px;    
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 1em;
+}
+
+#legalidad p {
+    margin: 0;    
+    /* background-color: #212832; */
+    /* color: #f55c19; */
+    /* color:  #547b9c; */
+
 }
