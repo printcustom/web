@@ -23,3 +23,7 @@ h1 {
 .cabecera a {
     text-decoration: none;
 }
+
+.margen-inferior {
+    margin-bottom: 110px;
+}
