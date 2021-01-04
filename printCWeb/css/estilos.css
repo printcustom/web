@@ -63,6 +63,11 @@ body {
     }
 }
 
+#img_raton {
+    width: 10vw;
+    max-width: 50px;
+}
+
 /*-----------------------------------------*/
 
 #social {
@@ -296,4 +301,12 @@ body {
     /* color: #f55c19; */
     /* color:  #547b9c; */
 
+}
+
+#legalidad a {
+    transition: font-size .3s ease-in-out;
+}
+
+#legalidad a:hover {
+    font-size: 1.1em;
 }

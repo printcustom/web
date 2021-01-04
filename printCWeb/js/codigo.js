@@ -9,6 +9,7 @@ function init() {
     // document.getElementById('video-intro').play();
 
     document.getElementById('chk_acepto').checked = false;
+    escogeTexto();
 
     //Control de cookies
     let w_cookie = getCookie("printCustom_visitas");
@@ -18,6 +19,14 @@ function init() {
     } else {
         preguntarCookies();
     }
+}
+
+function escogeTexto() {
+    let w_textos = new Array();
+    w_textos[0] = "Imprimiendo tus sueños";
+    w_textos[1] = "Centro de Impresión";
+    let w_aleat = Math.floor(Math.random()  * w_textos.length);
+    document.getElementById('txt_centro').innerText = w_textos[w_aleat];
 }
 
 //cuando pulsa el check de aceptar condiciones...
@@ -47,9 +56,9 @@ function rechazarCookies() {
 }
 
 function aceptaCookies() {
-    let w_ip = obtenerIP();
-    setCookie("printCustom_ip", w_ip, 30);
-    setCookie("printCustom_visitas", 1, 30);
+    // let w_ip = obtenerIP();
+    // setCookie("printCustom_ip", w_ip, 30);
+    setCookie("printCustom_visitas", 1, 365);
     let bloqueMsg = document.getElementById("cookies");
     bloqueMsg.parentNode.removeChild(bloqueMsg);
     let bloqueSocial = document.getElementById("social");
@@ -62,7 +71,7 @@ function setCookie(cname, cvalue, exdays) {
     var d = new Date();
     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
     var expires = "expires=" + d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";SameSite=Lax;path=/";
 }
 
 function removeCookie(cname){
