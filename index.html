@@ -92,13 +92,13 @@
 
     <div id="social">
         <div class="contenedor-vertical">
-            <a href="https://www.instagram.com/printcustom.es/" target="_blank" disabled>
+            <a href="https://www.instagram.com/printcustom.es/" target="_blank">
                 <img src="printCWeb/img/iconos/instagram.png" alt="instagram" class="social-img">
             </a>
-            <a href="#" target="_blank">
+            <a href="#">
                 <img src="printCWeb/img/iconos/youtube.png" alt="youtube" class="social-img">
             </a>
-            <a href="#" target="_blank">
+            <a href="#">
                 <img src="printCWeb/img/iconos/facebook.png" alt="facebook" class="social-img">
             </a>
         </div>
@@ -110,8 +110,8 @@
             Más información <a href="printCWeb/html/avisolegal.html#cookies">aquí</a>.
         </p>
         <span>
-            <input type="button" value="Aceptar" onclick="aceptaCookies()" class="btn_cookie">
-            <input type="button" value="Rechazar" onclick="rechazarCookies()" class="btn_cookie">
+            <input type="button" value="Aceptar" onclick="aceptaCookies()" id="btn_cookie_acep">
+            <input type="button" value="Rechazar" onclick="rechazarCookies()" id="btn_cookie_rechz">
         </span>
     </div>
 
@@ -157,7 +157,7 @@
         <div class="contenedor-horizontal">
             <div class="productos">
                 <div class="img-producto" id="regalo"></div>
-                <h3>Regalo promocional</h3>
+                <h3>regalo promocional</h3>
                 <p>una variedad</p>
                 <p>muy extensa</p>
             </div>
@@ -169,7 +169,7 @@
             </div>
             <div class="productos">
                 <div class="img-producto" id="moldes3d"></div>
-                <h3>Moldes en 3D</h3>
+                <h3>moldes en 3D</h3>
                 <p>decora todo lo que</p>
                 <p>puedas imaginar</p>
             </div>
@@ -181,7 +181,7 @@
             </div>
             <div class="productos">
                 <div class="img-producto" id="branding"></div>
-                <h3>Branding</h3>
+                <h3>branding</h3>
                 <p>diseño e marca</p>
                 <p>con muchas ventajas</p>
             </div>
@@ -229,7 +229,7 @@
             </div>
             <div class="productos">
                 <div class="img-producto" id="wraping"></div>
-                <h3>Wraping</h3>
+                <h3>Wrapping</h3>
                 <p>Cubrir vehículos</p>
                 <p>y más con vinilo</p>
             </div>
@@ -260,8 +260,10 @@
                 <p>Suscríbete y ahorra.</p>
             </div>
             <form method="post" action="mailto:comercial@printcustom.com" enctype="text/plain">
-                <input type="email" placeholder="miemail@ejemplo.com" class="email" name="email">
-                <input type="submit" value="Enviar" id="btn_enviar" class="caja-email-envia" disabled>
+                <div class="caja-email">
+                    <input type="email" placeholder="miemail@ejemplo.com" class="email" name="email">
+                    <input type="submit" value="Enviar" id="btn_enviar" class="caja-email-envia" disabled>
+                </div>
                 <div class="acepto">
                     <input type="checkbox" name="acepto" id="chk_acepto" onclick="activaEnviar()">
                     <span>
@@ -275,11 +277,13 @@
                 <address>
                     <div class="contacto-item">
                         <img src="printCWeb/img/iconos/telefono.png" alt="">
-                        <span>+34 658 030 128</span>
+                        <span class="txt_contacto">+34 658 030 128</span>
                     </div>
                     <div class="contacto-item">
                         <img src="printCWeb/img/iconos/email.png" alt="">
-                        <a href="mailto:comercial@printcustom.es">comercial@printcustom.es<a>
+                        <a href="mailto:comercial@printcustom.es" class="txt_contacto">
+                            comercial@printcustom.es
+                        </a>
                     </div>
                     <div class="contacto-item alinea-arriba">
                         <img src="printCWeb/img/iconos/ubicacion.png" alt="">

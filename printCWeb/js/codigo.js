@@ -15,7 +15,7 @@ function init() {
     let w_cookie = getCookie("printCustom_visitas");
     if (w_cookie != "") {      
         let w_visitas = parseInt(w_cookie) +1;
-        setCookie("printCustom_visitas", w_visitas, 30);
+        setCookie("printCustom_visitas", w_visitas, 365);
     } else {
         preguntarCookies();
     }

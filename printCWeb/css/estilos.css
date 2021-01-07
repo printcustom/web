@@ -95,10 +95,12 @@ body {
     bottom: 0;
     z-index: 15;
     width: 100%;
-    background-color: #212832;
-    /* color: #f55c19; */
-    color:  #547b9c;
-    padding: 1em;
+    /* background-color: #212832; */
+    /* color:  #547b9c; */
+    background-color: white;
+    color: black;
+    /* padding: 1em; */
+    padding-left: 1em;
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -113,7 +115,7 @@ body {
     color: inherit;
 }
 
-.btn_cookie {
+#btn_cookie_acep, #btn_cookie_rechz {
     font-family: Verdana, Tahoma, sans-serif;
     font-size: 0.8em;
      /* color: #f55c19; */
@@ -123,8 +125,14 @@ body {
     color: white;
     border: none;
     border-radius: 5px;
-    margin-left: 10px;
+    margin: 3px;
     width: 100px;
+    height: 25px;
+}
+
+#btn_cookie_rechz {
+    background-color: #6d95b8;
+    font-size: 0.7em;
 }
 
 /*-----------------------------------------*/
@@ -150,8 +158,6 @@ body {
     position: relative;
     max-width: 100%;
     top: 100%;
-    /* min-height: 720px; */
-    /* height: 100%; */
     height: 720px;
     background-repeat: no-repeat;
     background-position: left;
@@ -159,22 +165,28 @@ body {
     background-image: url("../img/pie/fondo-pie.jpg");    
 }
 
+.caja-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    position: relative;
+    width: 90vw;
+}
 
 .email {
     font-family: Verdana, Tahoma, sans-serif;
     font-size: 1em;
     background-color: #eee;
     border: none;
-    border-radius: 4em;
-    width: 400px;
+    border-radius: 4em;    
+    width: 100%;
     padding: 10px;
-    margin-top: 2em;
 }
 
 .caja-email-envia {
-    position: relative;
-    top: -40px;
-    right: -350px;
+    position: absolute;
+    right: 0;
     width: 80px;
     height: 40px;
     border: none;
@@ -188,9 +200,23 @@ body {
     cursor: pointer;
 }
 
+@media screen and (min-width: 475px) {
+    .caja-email {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .contacto {
+        width: 80vw;
+    }
+    .g-maps {
+        width: 60vw;
+    }
+}
+
 .acepto {
-    position: relative;
-    top: -30px;
+    margin-top: 10px;
     border: none;
     display: flex;
     justify-content: center;
@@ -290,7 +316,7 @@ body {
     position: absolute;
     top: 20px;
     left: 10px;
-    height: 20px;    
+    height: 40px;    
     font-family: Verdana, Tahoma, sans-serif;
     font-size: 1em;
 }
@@ -309,4 +335,17 @@ body {
 
 #legalidad a:hover {
     font-size: 1.1em;
+}
+
+@media screen and (max-width: 475px) {
+    .titulo-pie h3{
+        padding-top: 20px;
+    }
+    #legalidad {
+        left: unset;
+        right: 0;
+    }
+    .txt_contacto {
+        font-size: 0.8em;
+    }
 }

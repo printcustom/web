@@ -12,7 +12,8 @@
     text-align: center;
     font-family: Verdana, Tahoma, sans-serif;
     min-width: 150px;
-    width: 40%;
+    /* width: 40%; */
+    width: 90%;
     font-size: 0.9em;
     min-height: 310px;
     box-shadow: 
@@ -38,6 +39,12 @@
     }
 }
 
+@media screen and (min-width: 475px) {
+    .productos {        
+        width: 40%;
+    }
+}
+
 @media screen and (min-width: 992px) {
     .productos {        
         width: 30%;
@@ -45,7 +52,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .productos {        
+    .productos {
         width: 20%;
     }
 }
@@ -76,10 +83,7 @@
     background-image: url("../img/productos/IMG_2329.jpg");
 }
 #vinilo {
-    background-image: url("../img/productos/");
-}
-#branding {
-    background-image: url("../img/productos/");
+    background-image: url("../img/productos/vinilo.jpg");
 }
 #branding {
     background-image: url("../img/productos/pag-web_branding_powerbank.jpg");
@@ -106,7 +110,7 @@
     background-image: url("../img/productos/pag-web_busto-3d.jpg");
 }
 #wraping {
-    background-image: url("../img/productos/pag-web_furgoneta.jpg");
+    background-image: url("../img/productos/wrapping.jpg");
 }
 #cajaluz {
     background-image: url("../img/productos/2x3-portrait-canvas-mockup-hanging-on-wall-front-view.jpg");
