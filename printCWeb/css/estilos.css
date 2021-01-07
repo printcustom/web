@@ -152,6 +152,13 @@ body {
     flex-direction: column;
 }
 
+@media screen and (max-width: 475px) {
+    .contenedor-horizontal {
+        width: 100%;
+    }
+}
+
+
 /*-----------------------------------------*/
 
 .pie-contacto {

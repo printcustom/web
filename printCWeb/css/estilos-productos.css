@@ -6,16 +6,19 @@
 }
 
 .productos {
-    margin: 1em;
+    margin: 0.4em;
     padding: 0.2em;
     border-radius: 10px;
     text-align: center;
     font-family: Verdana, Tahoma, sans-serif;
     min-width: 150px;
-    /* width: 40%; */
-    width: 90%;
+    width: 45%;
+    height: 330px;
     font-size: 0.9em;
-    min-height: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
     box-shadow: 
         inset 0 -3em 3em rgba(0,0,0,0.1),
             0 0  0 2px whitesmoke,
@@ -33,21 +36,16 @@
     margin: 0;
 }
 
-@media screen and (min-width: 768px) {
-    .soluciones p {        
-        font-size: 0.9em;
-    }
-}
-
 @media screen and (min-width: 475px) {
     .productos {        
         width: 40%;
+        margin: 1.1em;
     }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1070px) {
     .productos {        
-        width: 30%;
+        width: 30%;        
     }
 }
 
@@ -57,12 +55,11 @@
     }
 }
 
-
 .img-producto {
     max-width: 100%;
     border-radius: inherit;
-    height: 200px;
     width: 100%;
+    height: 60%;
     background-size: cover;
     background-position: center;
     transition: transform .3s ease-in-out;
@@ -70,6 +67,12 @@
 
 .img-producto:hover {
     transform: scale(1.02);
+}
+
+.txt-producto {
+    max-width: 100%;
+    width: 100%;
+    height: 40%;
 }
 
 
