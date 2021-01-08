@@ -338,6 +338,8 @@ body {
 
 #legalidad a {
     transition: font-size .3s ease-in-out;
+    text-decoration: none;
+    color: black;
 }
 
 #legalidad a:hover {
@@ -348,10 +350,10 @@ body {
     .titulo-pie h3{
         padding-top: 20px;
     }
-    #legalidad {
+    /* #legalidad {
         left: unset;
         right: 0;
-    }
+    } */
     .txt_contacto {
         font-size: 0.8em;
     }

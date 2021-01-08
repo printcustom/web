@@ -11,7 +11,7 @@
     width: 2em;;
 } */
 
-.barra-menu {
+#barra-menu {
     position: fixed;
     width: 100%;
     top: 0;

@@ -11,6 +11,18 @@ function init() {
     document.getElementById('chk_acepto').checked = false;
     escogeTexto();
 
+    window.addEventListener("scroll", (event) => {
+        let w_pos_scroll = this.scrollY;
+        let w_alto_vw = window.innerHeight || document.body.clientHeight;
+        let w_barra_menu = document.getElementById('barra-menu');
+        if (w_pos_scroll >= w_alto_vw) {
+            w_barra_menu.style.backgroundColor = "whitesmoke";
+        } else {
+            w_barra_menu.style.backgroundColor = "";
+        }
+    });
+
+
     //Control de cookies
     let w_cookie = getCookie("printCustom_visitas");
     if (w_cookie != "") {      
