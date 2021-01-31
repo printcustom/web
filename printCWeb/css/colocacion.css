@@ -8,7 +8,7 @@ body {
 .img-cabecera {
     max-width: 100%;
     display: block;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 .titulo, .titulo-elemento {
@@ -26,6 +26,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1em;
     padding: 0 2em;
+    margin: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -87,10 +88,21 @@ body {
     margin: 20px 10px 0 0;
 }
 
-.item-1, .item-2, .item-3 {
+.item-texto-sub {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    margin-top: 5px;
+}
+
+
+/* ------------------------------------------- */
+
+.item-1, .item-2, .item-3,
+.item-4, .item-5, .item-6, .item-7 {
+    margin: 10px 0;
     max-width: 500px;
     height: 350px;
-    padding: 10px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -98,23 +110,50 @@ body {
 
 .item-1 {
     width: 35%;
-    background-image: url("../img/diseno/tomas-ramon.gif");
+    background-image: url("../img/colocacion/muestras/IMG_5835.jpg");
 }
-
 .item-2 {
-    width: 20%;
-    background-image: url("../img/diseno/dolsc-y-salat.gif");
-}
-
-.item-3 {
     width: 35%;
-    background-image: url("../img/diseno/IMG_5829.gif");
+    background-image: url("../img/colocacion/muestras/IMG_7300.jpg");
+}
+.item-3 {
+    width: 25%;
+    background-image: url("../img/colocacion/muestras/IMG_8400.jpg");
+}
+.item-4 {
+    width: 20%;
+    background-image: url("../img/colocacion/muestras/IMG_2016.jpg");
+}
+.item-5 {
+    width: 20%;
+    background-image: url("../img/colocacion/muestras/IMG_8180.jpg");
+}
+.item-6 {
+    width: 20%;
+    background-image: url("../img/colocacion/muestras/IMG_1812.jpg");
+}
+.item-7 {
+    width: 28%;
+    background-image: url("../img/colocacion/muestras/IMG_1850.jpg");
 }
 
-@media screen and (max-width: 950px) {
-    .item-1, .item-2, .item-3 {
-        width: 95%;
-        margin: 10px 0;
+
+@media screen and (max-width: 950px) {    
+    .item-1, .item-2 {width: 45%;}
+    .item-3, .item-4, .item-5, .item-6 {width: 30%;}
+    .item-7 {width: 40%;}
+}
+
+@media screen and (max-width: 768px) {
+    .item-3, .item-4, .item-5, .item-6, .item-7 {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .item-1, .item-2, .item-3, .item-4,
+    .item-5, .item-6, .item-7 {
+        width: 100%;
     }
 }
 

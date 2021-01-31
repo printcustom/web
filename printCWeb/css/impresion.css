@@ -146,3 +146,21 @@ body {
         width: 50px;
     }
 }
+
+.volver {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: whitesmoke;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 1.3em;
+}
+
+.volver a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.volver img {
+    width: 17px;
+}
