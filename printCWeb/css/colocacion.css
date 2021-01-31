@@ -6,9 +6,9 @@ body {
 }
 
 .img-cabecera {
-    max-width: 100%;
+    width: 100vw;
     display: block;
-    margin: 20px auto;
+    margin: 0 auto 20px auto;
 }
 
 .titulo, .titulo-elemento {

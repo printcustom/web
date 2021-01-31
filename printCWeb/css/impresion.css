@@ -11,6 +11,12 @@ body {
     margin: 0 auto;
 }
 
+@media screen and (min-width: 768px) {
+    .img-cabecera {
+        width: 80vw;
+    }
+}
+
 .titulo, .titulo-elemento {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
